@@ -1,0 +1,9 @@
+<article>
+    <h2>{{task.title}}</h2>
+    <time>{{task.dueDate | date}}</time><br>
+    <time>{{task.dueDate | date:"fullDate"}}</time>
+    <p>{{task.summary}}</p>
+    <p class="actions">
+        <button type="button" (click)="onCompleteTask()">Completed</button>
+    </p>
+</article>
